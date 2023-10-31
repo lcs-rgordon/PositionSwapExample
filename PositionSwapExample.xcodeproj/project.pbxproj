@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		81CE588A2AF10FF900B96987 /* PositionSwapExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CE58892AF10FF900B96987 /* PositionSwapExampleApp.swift */; };
-		81CE588C2AF10FF900B96987 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CE588B2AF10FF900B96987 /* ContentView.swift */; };
 		81CE588E2AF10FFA00B96987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CE588D2AF10FFA00B96987 /* Assets.xcassets */; };
 		81CE58912AF10FFA00B96987 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CE58902AF10FFA00B96987 /* Preview Assets.xcassets */; };
+		81CE589A2AF1103900B96987 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CE58992AF1103900B96987 /* NumberView.swift */; };
+		81CE589C2AF1104300B96987 /* SortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CE589B2AF1104300B96987 /* SortView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81CE58862AF10FF900B96987 /* PositionSwapExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PositionSwapExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CE58892AF10FF900B96987 /* PositionSwapExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionSwapExampleApp.swift; sourceTree = "<group>"; };
-		81CE588B2AF10FF900B96987 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81CE588D2AF10FFA00B96987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81CE58902AF10FFA00B96987 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81CE58992AF1103900B96987 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		81CE589B2AF1104300B96987 /* SortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				81CE58892AF10FF900B96987 /* PositionSwapExampleApp.swift */,
-				81CE588B2AF10FF900B96987 /* ContentView.swift */,
+				81CE58972AF1100900B96987 /* Views */,
 				81CE588D2AF10FFA00B96987 /* Assets.xcassets */,
 				81CE588F2AF10FFA00B96987 /* Preview Content */,
 			);
@@ -65,6 +67,15 @@
 				81CE58902AF10FFA00B96987 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81CE58972AF1100900B96987 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81CE58992AF1103900B96987 /* NumberView.swift */,
+				81CE589B2AF1104300B96987 /* SortView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81CE588C2AF10FF900B96987 /* ContentView.swift in Sources */,
+				81CE589C2AF1104300B96987 /* SortView.swift in Sources */,
 				81CE588A2AF10FF900B96987 /* PositionSwapExampleApp.swift in Sources */,
+				81CE589A2AF1103900B96987 /* NumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +299,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.PositionSwapExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -316,9 +330,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.PositionSwapExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
