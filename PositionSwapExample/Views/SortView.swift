@@ -41,6 +41,16 @@ struct SortView: View {
             }
             .padding()
             
+            Button(action: {
+                withAnimation(.easeIn(duration: 0.1)) {
+                    let temp = dataSet[0]
+                    dataSet[0] = dataSet[1]
+                    dataSet[1] = temp
+                }
+            }, label: {
+                Text("Swap")
+            })
+            
             Spacer()
         }
         .frame(width: 200, height: 400)
