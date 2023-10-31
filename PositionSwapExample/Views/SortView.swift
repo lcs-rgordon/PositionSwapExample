@@ -17,11 +17,9 @@ struct SortView: View {
     
     // MARK: Computed properties
     var body: some View {
-        HStack(spacing: 0) {
+        HStack(spacing: 20) {
             ForEach(dataSet) { view in
                 view
-                Text(", ")
-                    .font(.largeTitle)
             }
         }
         .frame(width: 400, height: 200)
