@@ -17,12 +17,33 @@ struct SortView: View {
     
     // MARK: Computed properties
     var body: some View {
-        HStack(spacing: 20) {
-            ForEach(dataSet) { view in
-                view
+        VStack {
+            Grid {
+                GridRow {
+                    Text("Index")
+                    Text("Value")
+                }
+                .font(.title)
+                .bold()
+                .padding(.bottom, 5)
+                
+                // NOTE: Referred to this page to for how to iterate over the collection
+                //       and obtain the index, or position, of each element
+                //       https://alejandromp.com/blog/swiftui-enumerated/
+                ForEach(Array(dataSet.enumerated()), id: \.element.id) { index, element in
+                    GridRow {
+                        Text("\(index)")
+                            .font(.title)
+                        element
+                    }
+                    .padding(.bottom, 2)
+                }
             }
+            .padding()
+            
+            Spacer()
         }
-        .frame(width: 400, height: 200)
+        .frame(width: 200, height: 400)
     }
 }
 

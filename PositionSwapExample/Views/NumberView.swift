@@ -16,7 +16,7 @@ struct NumberView: View, Identifiable {
     // MARK: Computed properties
     var body: some View {
         Text("\(number)")
-            .font(.largeTitle)
+            .font(.title)
     }
 }
 
